@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+body {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Alata', sans-serif;
+}
+
+h2, h3, h4 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: lighter;
+}
+
+p {
+  color: hsl(0, 0%, 55%);
+  line-height: 1.6;
+}
+
+a, a:focus, a:visited, a:hover {
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.mobile {
+  display: none;
+}
+
+section {
+  margin: 64px 165px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+/* Header */
+
+header {
+  position: relative;
+}
+
+header img {
+  position: relative;
+  width: 100%;
+}
+
+header section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+header .logo {
+  width: 192px;
+  float: left;
+}
+
+header nav {
+  float: right;
+}
+
+header li {
+  text-decoration: none;
+  padding: 6px 0px 20px 0;
+  position: relative;
+  margin-left: 33px;
+}
+
+header li::before {
+  transition: 300ms;
+  height: 2px;
+  content: "";
+  position: absolute;
+  background-color: hsl(0, 0%, 100%);
+  ;
+}
+
+header li::before {
+  width: 0%;
+  margin: 0 25%;
+  bottom: 10px;
+}
+
+header li:hover::before {
+  width: 50%;
+}
+
+header h2 {
+  border: solid 2px hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+  font-size: 4.8em;
+  max-width: 573px;
+  margin: 0;
+  padding: 39px 37px 27px;
+  position: absolute;
+  bottom: 84px;
+  line-height: 0.98;
+}
+
+/* Middle section */
+
+.middle-section {
+  position: relative;
+}
+
+.image-content {
+  width: 66%;
+}
+
+.middle-section img {
+  margin-top: 92px;
+  width: 100%;
+}
+
+.text-content {
+  background-color: white;
+  position: absolute;
+  top: 276px;
+  right: 0;
+  padding: 48px 0 0 98px;
+  max-width: 444px;
+}
+
+.middle-section h3 {
+  font-size: 3.2em;
+  color: hsl(0, 0%, 0%);
+  text-transform: uppercase;
+  margin-block-end: 0.5em;
+}
+
+/* Attribution */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
