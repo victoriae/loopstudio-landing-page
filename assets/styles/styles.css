@@ -40,6 +40,11 @@ li {
   float: left;
 }
 
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+
 /* Header */
 
 header {
@@ -68,14 +73,14 @@ header nav {
   float: right;
 }
 
-header li {
+nav li {
   text-decoration: none;
   padding: 6px 0px 20px 0;
   position: relative;
   margin-left: 33px;
 }
 
-header li::before {
+nav li::before {
   transition: 300ms;
   height: 2px;
   content: "";
@@ -84,13 +89,13 @@ header li::before {
   ;
 }
 
-header li::before {
+nav li::before {
   width: 0%;
   margin: 0 25%;
   bottom: 10px;
 }
 
-header li:hover::before {
+nav li:hover::before {
   width: 50%;
 }
 
@@ -111,6 +116,7 @@ header h2 {
 
 .middle-section {
   position: relative;
+  margin: 64px 165px 180px;
 }
 
 .image-content {
@@ -127,8 +133,8 @@ header h2 {
   position: absolute;
   top: 276px;
   right: 0;
-  padding: 48px 0 0 98px;
-  max-width: 444px;
+  padding: 48px 0 48px 98px;
+  max-width: 40%;
 }
 
 .middle-section h3 {
@@ -138,18 +144,40 @@ header h2 {
   margin-block-end: 0.5em;
 }
 
+.creations-section{
+  margin: 64px 165px 184px;
+}
+
 .creations-section h3 {
   font-size: 3.2em;
   color: hsl(0, 0%, 0%);
   text-transform: uppercase;
-  margin-block-end: 0.5em;
+  margin: 0;
+}
+
+.creations-section .flex a {
+  display: block;
+  color: hsl(0, 0%, 0%);
+  border: solid 1px hsl(0, 0%, 0%);
+  line-height: 1;
+  padding: 12px 38px;
+  height: fit-content;
+  align-self: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.creations-section .flex a:hover {
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
 }
 
 .creations-section ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  grid-gap: 30px;
   grid-auto-rows: minmax(100px, auto);
+  margin-top: 79px;
 }
 
 .creations-section li a {
@@ -188,11 +216,56 @@ header h2 {
   bottom: 0;
   text-transform: uppercase;
   line-height: 1;
-  font-size: 2em;
-  padding: 0 0 30px 40px;
+  font-size: 2.14em;
+  padding: 0 0 32px 40px;
 }
 
 .creations-section li a:hover span {
+  color: hsl(0, 0%, 41%);
+}
+
+footer {
+  display: grid;
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+}
+
+footer section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 0;
+  grid-auto-rows: minmax(100px, auto);
+  margin: 40px 165px 20px;
+}
+
+footer .logo {
+  max-width: 144px;
+  margin-top: 4px;
+}
+
+footer .logo img {
+  width: 100%;
+}
+
+footer .sections-nav {
+  margin-top: 17px;
+}
+
+footer .sections-nav li {
+  margin-left: 0;
+  margin-right: 33px;
+}
+
+footer .social-nav, footer .copyright {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer .social-nav li {
+  margin-left: 16px;
+}
+
+footer .copyright span {
   color: hsl(0, 0%, 41%);
 }
 
