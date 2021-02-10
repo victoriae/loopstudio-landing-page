@@ -136,6 +136,10 @@ header h2 {
   bottom: 84px;
 }
 
+#close-nav {
+  display: none;
+}
+
 /* Middle section */
 
 .middle-section {
@@ -160,6 +164,8 @@ header h2 {
   max-width: 40%;
 }
 
+/* Creations section */
+
 .creations-section {
   margin: 64px 165px 184px;
 }
@@ -174,6 +180,10 @@ header h2 {
   align-self: center;
   text-transform: uppercase;
   letter-spacing: 4px;
+}
+
+.creations-section a.see-all.mobile {
+  display: none;
 }
 
 .creations-section a.see-all:hover {
@@ -196,6 +206,7 @@ header h2 {
 
 .creations-section li a img {
   width: 100%;
+  height: intrinsic;
 }
 
 .creations-section li a:hover img {
@@ -227,6 +238,8 @@ header h2 {
 .creations-section li a:hover h4 {
   color: hsl(0, 0%, 41%);
 }
+
+/* Footer */
 
 footer {
   display: grid;
@@ -448,14 +461,14 @@ footer .copyright span {
     border: 0;
   }
   #close-nav {
-    display: none;
     z-index: 3;
     position: relative;
   }
   .creations-section a.see-all.desktop {
     display: none;
   }
-  .creations-section a.see-all {
+  .creations-section a.see-all.mobile {
+    display: block;
     width: fit-content;
     margin: 30px auto 0;
   }
